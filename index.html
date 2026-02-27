@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Future Vision | Harsh Rathod</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    background: linear-gradient(135deg,#0f2027,#203a43,#2c5364);
+    color:white;
+    overflow-x:hidden;
+}
+
+/* NAVBAR */
+nav{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:20px 60px;
+    backdrop-filter: blur(10px);
+    background: rgba(255,255,255,0.05);
+    position:fixed;
+    width:100%;
+    z-index:1000;
+}
+
+nav h1{
+    font-size:22px;
+    font-weight:700;
+    letter-spacing:2px;
+}
+
+nav ul{
+    list-style:none;
+    display:flex;
+    gap:30px;
+}
+
+nav ul li a{
+    text-decoration:none;
+    color:white;
+    font-weight:500;
+    transition:0.3s;
+}
+
+nav ul li a:hover{
+    color:#00f5ff;
+}
+
+/* HERO SECTION */
+.hero{
+    height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    flex-direction:column;
+    text-align:center;
+    padding:20px;
+}
+
+.hero h2{
+    font-size:50px;
+    background:linear-gradient(to right,#00f5ff,#00ff87);
+    -webkit-background-clip:text;
+    color:transparent;
+}
+
+.hero p{
+    margin-top:20px;
+    font-size:18px;
+    max-width:600px;
+}
+
+.hero button{
+    margin-top:30px;
+    padding:12px 30px;
+    border:none;
+    border-radius:30px;
+    background:#00f5ff;
+    color:black;
+    font-weight:600;
+    cursor:pointer;
+    transition:0.3s;
+}
+
+.hero button:hover{
+    background:#00ff87;
+    transform:scale(1.1);
+}
+
+/* SECTION STYLE */
+section{
+    padding:100px 10%;
+}
+
+.glass{
+    background:rgba(255,255,255,0.08);
+    padding:40px;
+    border-radius:20px;
+    backdrop-filter:blur(15px);
+    box-shadow:0 0 40px rgba(0,0,0,0.3);
+}
+
+/* PRESENTATION */
+iframe{
+    width:100%;
+    height:500px;
+    border-radius:20px;
+    margin-top:30px;
+}
+
+/* FOOTER */
+footer{
+    text-align:center;
+    padding:30px;
+    background:rgba(0,0,0,0.3);
+    margin-top:50px;
+}
+
+@media(max-width:768px){
+    .hero h2{
+        font-size:32px;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<nav>
+    <h1>HARSH VISION</h1>
+    <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#presentation">Presentation</a></li>
+        <li><a href="#contact">Contact</a></li>
+    </ul>
+</nav>
+
+<div class="hero">
+    <h2>Welcome to the Future 🚀</h2>
+    <p>I believe in becoming 1% better every single day. This website showcases my research, creativity, and futuristic thinking.</p>
+    <button onclick="document.getElementById('presentation').scrollIntoView({behavior:'smooth'})">
+        View My Work
+    </button>
+</div>
+
+<section id="about">
+    <div class="glass">
+        <h2>About This Project</h2>
+        <p>
+        This platform represents my dedication, research mindset, and creativity.
+        I don't just complete assignments — I design experiences.
+        My goal is to combine knowledge, design, and technology into something powerful.
+        </p>
+    </div>
+</section>
+
+<section id="presentation">
+    <div class="glass">
+        <h2>My Research Presentation</h2>
+
+        <iframe src="https://docs.google.com/presentation/d/e/2PACX-1vQiLn7OnTJ1d1wj0Ouo6g5X0LYGLywiCaZRMgoFkB6mY-7FxHj-3FPt_SJR9q6lVHIihuovrvWpzrSo/pubembed?start=true&loop=true&delayms=60000"
+        frameborder="0"
+        allowfullscreen="true"
+        mozallowfullscreen="true"
+        webkitallowfullscreen="true">
+        </iframe>
+
+    </div>
+</section>
+
+<section id="contact">
+    <div class="glass">
+        <h2>Contact & Vision</h2>
+        <p>
+        I am building skills in research, design, and technology.
+        If you believe in innovation, growth, and big dreams —
+        let's connect and create the future.
+        </p>
+    </div>
+</section>
+
+<footer>
+    © 2026 Harsh Rathod | Designed with Vision & Discipline ⚡
+</footer>
+
+</body>
+</html>
